@@ -33,19 +33,19 @@ Pin placement optimization is a vital part of floorplanning. Input pins are usua
 # Floorplan
 To view the placement type run_placement
 
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-18%2023-38-07.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/4789644c-d683-4e23-a328-651c183ac6f5)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/4789644c-d683-4e23-a328-651c183ac6f5)
 
 To open the floor plan we need to first go to the required directory
-vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/18-09_17-17/results/floorplan$ 
+- vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/18-09_17-17/results/floorplan$ 
 
 Next we need to type this command:
-magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+- magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 
 This is what we get after running the above command
 
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-18%2023-46-37.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/d5551e71-ea88-41e9-bf5a-45428ae6a56e)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/d5551e71-ea88-41e9-bf5a-45428ae6a56e)
 
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-18%2023-47-50.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/4f82a7ea-092c-4864-91f9-45be46a79ba5)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/4f82a7ea-092c-4864-91f9-45be46a79ba5)
 
 # Library binding and placement
 ## Bind the netlist with physical cells
@@ -60,14 +60,14 @@ Assuming the ideal operation of all clock signals, a critical aspect of the desi
 ## Placement
 To view the placement type the command:
 run_placement
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-19%2000-03-22.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/90ebf583-b71a-490c-93c9-f3158074ba6d)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/90ebf583-b71a-490c-93c9-f3158074ba6d)
 
 Type the following command:
-magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+- magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
 
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-19%2000-05-33.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/1a04896d-3229-426f-8c41-3df76c272302)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/1a04896d-3229-426f-8c41-3df76c272302)
 
-file:///home/vsduser/Pictures/Screenshot%20from%202023-09-19%2000-06-39.png![image](https://github.com/Pranav1723/pes_pd/assets/78376336/b89e99e7-beb4-40ef-a901-f3bdd9db3c7e)
+![image](https://github.com/Pranav1723/pes_pd/assets/78376336/b89e99e7-beb4-40ef-a901-f3bdd9db3c7e)
 
 # Semiconductor Cell Design and Characterization Flow
 
